@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Give Student Attendance</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+            * {margin: 0; padding: 0;}
+
+            html {
+                height: 100%;
+                background-color: #cccccc;
+            }
+
+            body {
+                font-family: montserrat, arial, verdana;
+            }
+            #msform {
+                width: 900px;
+                margin: 50px auto;
+                text-align: center;
+                position: relative;
+            }
+            #msform fieldset {
+                background: white;
+                border: 0 none;
+                border-radius: 3px;
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+                padding: 20px 30px;
+                box-sizing: border-box;
+                width: 80%;
+                margin: 0 10%;
+                position: relative;
+            }
+            #msform fieldset:not(:first-of-type) {
+                display: none;
+            }
+            #msform input, #msform textarea {
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                margin-bottom: 10px;
+                width: 100%;
+                box-sizing: border-box;
+                font-family: montserrat;
+                color: #2C3E50;
+                font-size: 13px;
+            }
+            #msform .action-button {
+                width: 300px;
+                background: #ff6633;
+                font-weight: bold;
+                color: white;
+                border: 0 none;
+                border-radius: 1px;
+                cursor: pointer;
+                padding: 10px 5px;
+                margin: 10px 5px;
+            }
+            #msform .action-button:hover, #msform .action-button:focus {
+                box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+            }
+            .fs-title {
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #ff6633;
+                margin-bottom: 10px;
+
+            }
+            .fs-subtitle {
+                font-weight: normal;
+                font-size: 13px;
+                color: #ff6633;
+                margin-bottom: 20px;
+            }
+
+            .img {
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="tcsc banner.jpg" alt="TCSC Banner" width="1535" height="150" class="img">
+        <form id="msform" method="get" action="Class_C">
+            <fieldset>
+                <h3 class="fs-title">Class C Attendance List</h3>
+                Date: <input type ="text" name="date" placeholder="dd-mm-yy"><br><br>
+                Subject <input type="text" name="subject"><br>
+                22801: <input type ="checkbox" name="22801"><br>
+                22802: <input type ="checkbox" name="22802"><br>
+                22803: <input type ="checkbox" name="22803"><br>
+                22804: <input type ="checkbox" name="22804"><br>
+                22805: <input type ="checkbox" name="22805"><br>
+                <input type="submit" class="action-button" value="Give Attendance" name="give_atd_class_a">
+            </fieldset>
+        </form>
+    </body>
+</html>
